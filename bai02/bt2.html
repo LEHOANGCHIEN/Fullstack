@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 02</title>
 </head>
 
 <body>
     <h1>Câu 1: Đây là bài tập về thẻ video</h1>
-    <p>Yêu cầu: Tạo thư mục đặt tên là videos, sau đó để video bất kỳ vào thư mục videos đó. Tiếp theo, chèn video đó vào trang web bằng cách sử dụng thẻ video và thẻ source. Đường dẫn video là dạng relative (Đường dẫn tương đối). Đặt kích thước video có width bằng 720 và height bằng 405 (tương đương tỷ lệ 16/9).</p>
-    <video width="720" height="405" controls>
-        <source src="videos/ten_video.mp4" type="video/mp4">
+    <p><b>Yêu cầu</b>: Tạo thư mục đặt tên là videos, sau đó để video bất kỳ vào thư mục videos đó. Tiếp theo, chèn video đó vào trang web bằng cách sử dụng thẻ video và thẻ source. Đường dẫn video là dạng relative (Đường dẫn tương đối). Đặt kích thước video có width bằng 720 và height bằng 405 (tương đương tỷ lệ 16/9).</p>
+    <video
+        controls
+        loop
+        autoplay
+        muted
+        width="720"
+        height="405"
+        poster="https://cdn-main.28tech.com.vn/media/anh-khoa-hoc/web3.png"
+    >
+        <source src="assets/videos/video.mp4" type="video/mp4">
         Trình duyệt của bạn không hỗ trợ video.
     </video>
+
+    <h1>Câu2: Bài tập về thẻ table</h1>
+    <p><b>Yêu cầu</b>: Dùng thẻ table, thead, tbody, tr, th, td đã được học để vẽ bảng sau:</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">Hoá đơn số 1234</th>
+                <th colspan="2">Ngày 20/11/2022</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr rowspan="4">
+                <td colspan="3">
+                    <p><b>Thông tin khách hàng</b></p>
+                    <p>Họ tên: Lê Hoàng Chiến</p>
+                    <p>Số điện thoại: 0123456789</p>
+                    <p>Địa chỉ: số 123, đường Abc, thành phố Hà Nội.</p>
+                </td>
+                <td colspan="3">
+                    <p><b>Thông tin vận chuyển đơn hàng</b></p>
+                    <p>Họ tên: Đặng Phương Nam</p>
+                    <p>Số điện thoại: 0123456789</p>
+                    <p>Địa chỉ: số 234, đường Xyz, thành phố Hà Nội.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Tên sản phẩm</b></td>
+                <td><b>Số lượng</b></td>
+                <td><b>Đơn giá</b></td>
+                <td colspan="2"><b>Thành tiền</b></td>
+            </tr>
+            <tr>
+                <td colspan="2">Giày nam cao cấp</td>
+                <td>2</td>
+                <td>800.000đ</td>
+                <td colspan="2">1.600.000đ</td>
+            </tr>
+            <tr>
+                <td colspan="2">Giày nữ cao cấp</td>
+                <td>1</td>
+                <td>500.000đ</td>
+                <td colspan="2">1.000.000đ</td>
+            </tr>
+            <tr>
+                <td colspan="4"><b>Tạm tính</b></td>
+                <td>2.600.000đ</td>            
+            </tr>
+            <tr>
+                <td colspan="4"><b>Thuế VAT 10%</b></td>
+                <td>260.000đ</td>            
+            </tr>
+            <tr>
+                <td colspan="4"><b>Tổng tiền</b></td>
+                <td>2.860.000đ</td>
+            </tr>
+            <tr>
+            
+            </tr>
+            <tr>
+            
+            </tr>
+            <tr>
+            
+            </tr>
+        </tbody>
+    </table>
 </body>
+</html>
