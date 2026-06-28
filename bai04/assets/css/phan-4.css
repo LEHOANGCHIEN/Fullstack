@@ -1,0 +1,12 @@
+div {
+    border: 5px solid black;
+    font-size: 40px;
+    width: 500px;
+    height: 500px;
+    color:#B8375E;
+    /* background-color:#BD9965; */
+    background-image: url("../images/stream-8454178_1280.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
