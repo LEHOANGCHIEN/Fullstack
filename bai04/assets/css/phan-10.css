@@ -1,0 +1,31 @@
+/* Cách 1: Chọn theo tên phần tử */
+/* h2 {
+    color:green;
+    background-color:orange;
+} */
+
+/* Cách 2: Chọn theo class */
+
+.title-1 {
+    color:white;
+    background-color:red;
+}
+
+.title-2 {
+    color:blue;
+    background-color:yellow;
+}
+
+.title-3 {
+    color:green;
+    background-color:orange;
+}
+
+/* Cách 3: Gom nhóm */
+
+.title-1, .title-2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+}
