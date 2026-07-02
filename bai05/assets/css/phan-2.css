@@ -1,0 +1,25 @@
+.menu-1 li {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: green;
+    background-color: #e8e8e8;
+}
+
+.menu-1 li:hover {
+    color: orange;
+    background-color: #bababa;
+}
+
+.box {
+    background-color: #a00000;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff3838;
+    transition: all 0.5s;
+}
+
+.box:hover {
+    color: white;
+}

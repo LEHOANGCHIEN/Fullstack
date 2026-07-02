@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+}
+
+.menu-1 li::before {
+    content: "- ";
+}
+
+.menu-1 li:after {
+    content: " >";
+}
+
+.menu-2 li::before {
+    content: "+ ";
+}
+
+.menu-2 li:after {
+    content: "!";
+}
