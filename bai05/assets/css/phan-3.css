@@ -1,0 +1,16 @@
+.list a {
+    color: black;
+}
+
+/* .list a[target] {
+    background-color: orange;
+} */
+
+/* 
+.list a[href="https://google.com"] {
+    background-color: orange;
+} */
+
+.list a[href*="google.com"] {
+    background-color: orange;
+}

@@ -1,0 +1,87 @@
+/* 
+0 0 0 2 -> 2
+*/
+ul li {
+    color: blue;
+}
+
+/* 
+0 0 0 1 -> 1
+*/
+
+li {
+    color: green;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/* 
+0 0 0 1 -> 1
+*/
+li {
+    color: red;
+}
+
+
+
+
+
+
+/* 0-0-0-1 --> 1 */
+h2 {
+    color: red !important;
+    font-size: 20px !important;
+}
+
+/* 0-0-1-1 --> 11 */
+h2.title {
+    color: blue !important;
+}
+
+/* 0-0-1-2 --> 12 */
+div h2.title {
+    color: orange !important;
+}
+
+/* 0-0-2-1 --> 21 */
+.head h2.title {
+    color: green;
+}
+
+/* 0-0-2-2 --> 22 */
+div.head h2.title {
+    color: gray;
+}
+
+/* 0-1-2-2 --> 122 */
+#main div.head h2.title {
+    color: pink;
+}
+
+/* 0-2-1-2 --> 212 */
+#main div#head h2.title {
+    color: purple;
+}
+
+
+/* .title-1 {
+    font-size: 40px;
+    color: red;
+}
+
+.title-2 {
+    font-size: 50px;
+    color: green;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+} */

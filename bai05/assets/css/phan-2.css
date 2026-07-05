@@ -1,4 +1,4 @@
-.menu-1 li {
+/* .menu-1 li {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 600;
@@ -22,4 +22,66 @@
 
 .box:hover {
     color: white;
+}
+
+.menu-2 {
+    font-size: 30px;
+} */
+
+/* .menu-2 li:first-child {
+    color: red;
+} */
+
+/* .menu-2 li:last-child {
+    color: red;
+} */
+
+/* .menu-2 li:nth-child(4),
+.menu-2 li:nth-child(5),
+.menu-2 li:nth-child(6) {
+    color: red;
+} */
+
+.table-1 {
+    border: 1px solid gray;
+}
+
+.table-1 th, .table-1 td {
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.table-1 th {
+    background-color: #242B40;
+    color: #37b2eb;
+}
+
+.table-1 td {
+    color: #a6a6b2;
+}
+
+.table-1 tbody tr:nth-child(2n) td {
+    background-color: #1d2330;
+}
+
+.table-1 tbody tr:nth-child(2n + 1) td {
+    background-color: #323C50;
+}
+
+.table-1 tbody tr:hover td {
+    background-color: #464A52;
+}
+
+.table-1 tbody tr:last-child td {
+    background-color: #0041c4;
+}
+
+.table-1 tbody tr td:first-child {
+    color: #CA5E6F;
+}
+
+.table-1 tbody tr td:hover {
+    color: #595716;
+    background-color: #FEF742;
 }
