@@ -1,0 +1,30 @@
+.box-1 {
+    font-size: 20px;
+    text-align: justify;
+
+    border: 10px solid #7C0312;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+
+    /* margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-left: 90px; */
+
+    margin: 30px 50px 70px 90px;
+}
+
+.box-2 {
+    font-size: 20px;
+    text-align: justify;
+
+    border: 10px solid #197c03;
+    /* padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 80px; */
+
+    padding: 20px 40px 60px 80px;
+}
