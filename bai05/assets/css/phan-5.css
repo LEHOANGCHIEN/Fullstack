@@ -1,3 +1,6 @@
+body {
+    margin: 0px;
+}
 .box-1 {
     font-size: 20px;
     text-align: justify;
@@ -26,5 +29,9 @@
     padding-bottom: 60px;
     padding-left: 80px; */
 
-    padding: 20px 40px 60px 80px;
+    padding: 20px;
+}
+
+.box-2:hover {
+    border: 20px dashed #f200ff;
 }
