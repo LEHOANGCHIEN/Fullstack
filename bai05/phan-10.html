@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        span {
+            background: yellow;
+            border: 2px solid #000000;
+        }
+
+        .inline {
+            display: inline;
+            width: 500px;
+            height: 900px;
+            margin: 10px 100px;
+            padding: 30px 40px;
+        }
+
+        .block {
+            display: block;
+            width: 200px;
+            height: 90px;
+            margin: 20px 30px 40px 50px;
+            padding: 40px 30px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 90px;
+            margin: 20px 30px 40px 50px;
+            padding: 40px 30px;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+
+    <h2>1. display: inline;</h2>
+    <p>
+        Xin chào <span class="inline">Lê Hoàng Chiến</span> Bạn có khoẻ không?
+    </p>
+    
+    <h2>2. display: block;</h2>
+    <p>
+        Xin chào <span class="block">Lê Hoàng Chiến</span> Bạn có khoẻ không?
+    </p>
+
+    <h2>3. display: inline-block;</h2>
+    <p>
+        Xin chào <span class="inline-block">Lê Hoàng Chiến</span> Bạn có khoẻ không?
+    </p>
+
+    <h2>4. display: none</h2>
+    <p>
+        Xin chào <span class="display-none">Lê Hoàng Chiến</span> Bạn có khoẻ không?
+    </p>
+
+    <h2>4. visibility: hidden</h2>
+    <p>
+        Xin chào <span class="hidden">Lê Hoàng Chiến</span> Bạn có khoẻ không?
+    </p> -->
+
+    <style>
+        .menu > li > ul {
+            display: none;
+        }
+
+        .menu > li:hover > ul {
+            display: block;
+        }
+    </style>
+    <ul class="menu">
+        <li>
+            Mục 1
+            <ul>
+                <li>Mục 1 - 1</li>
+                <li>Mục 1 - 2</li>
+                <li>Mục 1 - 3</li>
+            </ul>
+        </li>
+        <li>
+            Mục 2
+            <ul>
+                <li>Mục 2 - 1</li>
+                <li>Mục 2 - 2</li>
+                <li>Mục 2 - 3</li>
+            </ul>
+        </li>
+        <li>
+            Mục 3
+            <ul>
+                <li>Mục 3 - 1</li>
+                <li>Mục 3 - 2</li>
+                <li>Mục 3 - 3</li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
