@@ -21,6 +21,18 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+
+@media (max-width: 1230px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        width: 546px;
+    }
+}
 /* End Container */
 
 /* Box */
@@ -44,8 +56,6 @@ body {
 }
 
 .header .inner-wrap {
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +76,40 @@ body {
     height: 42px;
 }
 
+@media (max-width: 1230px) {
+    .header {
+        padding: 15px 0;
+    }
+
+    .header .inner-logo {
+        width: 140px;
+        height: 42px;
+    }
+
+    .header .inner-menu {
+        width: 418px;
+        height: 30px;
+    }
+
+    .header .inner-button {
+        width: 102px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 750px) {
+    .header .inner-menu {
+        width: 66px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .header .inner-button {
+        width: 102px;
+        height: 36px;
+    }
+}
+
 /* End Header */
 
 /* Section 1 */
@@ -83,6 +127,16 @@ body {
 .section-1 .inner-content, .section-1 .inner-image {
     height: 520px;
 }
+
+@media (max-width: 1230px) {
+    .section-1 {
+        padding: 60px 0;
+    }
+
+    .section-1 .inner-content, .section-1 .inner-image {
+        height: 310px;
+    }
+}
 /* End Section 1 */
 
 /* Section 2 */
@@ -99,6 +153,16 @@ body {
 .section-2 .inner-item {
     height: 420px;
 }
+
+@media (max-width: 1230px) {
+    .section-2 {
+        padding: 60px 0;
+    }
+
+    .section-2 .inner-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 /* End Section 2 */
 
 /* Title */
@@ -107,6 +171,14 @@ body {
     height: 80px;
     margin: 0 auto 40px;
     font-family: var(--font-2);
+}
+
+@media (max-width: 1230px) {
+    .title {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto 30px;
+    }
 }
 /* End Title */
 
@@ -125,6 +197,16 @@ body {
 .section-3 .inner-item {
     height: 300px;
 }
+
+@media (max-width: 1230px) {
+    .section-3 {
+        padding: 60px 0;
+    }
+
+    .section-3 .inner-wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* End Section 3 */
 
 /* Section 4 */
@@ -140,6 +222,16 @@ body {
 
 .section-4 .inner-item {
     height: 300px;
+}
+
+@media (max-width: 1230px) {
+    .section-4 {
+        padding: 60px 0;
+    }
+
+    .section-4 .inner-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 /* End Section 4 */
 
