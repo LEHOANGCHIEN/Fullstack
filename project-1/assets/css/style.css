@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --color-main: #4502C7;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Container */
+/* Big screen */
+.container {
+    background-color: orange;
+    width: 1184px;
+    margin: 0 auto;
+}
+
+/* Small laptop screen */
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* Big Tablet/ Horizontal Tablet Screen */
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* Small Tablet / Horizontal Mobile Screen */
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Mobile (Vertical) */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+}
+/* End Container */
+
+/* Top Header */
+.top-header {
+    background-color: var(--color-main);
+    padding: 10px 0;
+}
+
+.top-header .inner-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.top-header .inner-item {
+    color: #FFFBEB;
+    font-weight: 400;
+    font-size: 14;
+    display: flex;
+    align-items: center;
+}
+
+.top-header .inner-item i {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 8px;
+}
+/* End Top Header */
+
+
+
