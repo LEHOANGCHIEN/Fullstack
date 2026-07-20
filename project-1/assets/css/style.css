@@ -13,10 +13,13 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Container */
 /* Big screen */
 .container {
-    background-color: orange;
     width: 1184px;
     margin: 0 auto;
 }
@@ -79,5 +82,103 @@ body {
 }
 /* End Top Header */
 
+/* Header */
+.header {
+    padding: 12px 0;
+}
 
+.header .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .inner-logo img {
+    width: 218px;
+}
+
+.header .inner-menu > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.header .inner-menu > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+}
+
+.header .inner-menu > ul > li > a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #25282B;
+}
+
+.header .inner-menu > ul > li > a.inner-active,
+.header .inner-menu > ul > li > a:hover {
+    color: var(--color-main);
+}
+
+.header .inner-menu > ul > li > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    width: 280px;
+    padding: 8px 0;
+    border-radius: 0 0 10px 10px;
+    display: none;
+}
+
+.header .inner-menu > ul > li:hover > ul {
+    display: block;
+}
+
+.header .inner-menu > ul > li > ul > li > a {
+    display: block;
+    padding: 8px 22px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-main);
+}
+
+.header .inner-menu > ul >li > ul > li > a.inner-active,
+.header .inner-menu > ul >li > ul > li > a:hover {
+    background-color: var(--color-main);
+    color: #FFFFFF;
+}
+
+.header .inner-cart {
+    display: flex;
+    align-items: center;
+}
+
+.header .inner-cart .inner-icon-cart {
+    width: 28px;
+}
+
+.header .inner-cart .inner-icon-arrow {
+    width: 5px;
+    margin-right: -0.5px;
+}
+
+.header .inner-cart div {
+    border-radius: 3px;
+    background-color: #FF3904;
+    font-weight: 400;
+    font-size: 10;
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    padding: 0 5px;
+}
+/* End Header */
 
