@@ -257,4 +257,8 @@ a {
     border-radius: 10px;
     padding: 40px;
 }
+
+.section-1 .inner-input-group {
+    background-color: white;
+}
 /* End Section 1 */
