@@ -222,3 +222,39 @@ a {
 }
 /* End Header */
 
+/* Section 1 */
+.section-1 {
+    padding: 106px 0;
+    background-image: url(../images/demo/background-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1 .inner-wrap {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.section-1 .inner-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--color-main);
+}
+
+.section-1 .inner-desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16;
+    color: #25282B;
+}
+
+.section-1 .inner-form {
+    background-color: #00000066;
+    border-radius: 10px;
+    padding: 40px;
+}
+/* End Section 1 */
