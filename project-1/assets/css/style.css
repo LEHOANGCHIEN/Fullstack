@@ -885,4 +885,56 @@ input, textarea, select, button {
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
+
+@media (max-width: 992px) {
+    .section-8 .inner-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-8 .inner-item-2 {
+        grid-row: 2 / span 1;
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-8 {
+        padding-bottom: 45px;
+    }
+    .section-8 .inner-wrap {
+        gap: 10px;
+    }
+
+    .section-8 .inner-item-1 {
+        border-radius: 10px;
+    }
+
+    .section-8 .inner-item-1 .inner-content {
+        padding: 10px;
+    }
+
+    .section-8 .inner-item-1 .inner-date {
+        font-size: 10px;
+    }
+
+    .section-8 .inner-item-1 .inner-title {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+
+    .section-8 .inner-item-2 {
+        border-radius: 10px;
+    }
+
+    .section-8 .inner-item-2 .inner-content {
+        padding: 10px;
+    }
+
+    .section-8 .inner-item-2 .inner-date {
+        font-size: 12px;
+    }
+    .section-8 .inner-item-2 .inner-title {
+        font-size: 18px;
+    }
+}
 /* End Section 8 */
