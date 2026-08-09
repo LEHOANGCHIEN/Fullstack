@@ -1248,3 +1248,17 @@ input, textarea, select, button {
 }
 /* End Box Breadcrumb */
 
+/* Section 9 */
+.section-9 {
+    padding-bottom: 60px 0;
+
+}
+
+.section-9 .inner-wrap {
+    display: grid;
+    grid-template-columns: 279fr 882fr;
+    gap: 23px;
+}
+
+
+/* End Section 9 */
