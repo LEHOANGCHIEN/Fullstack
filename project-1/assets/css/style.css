@@ -74,7 +74,7 @@ input, textarea, select, button {
 .top-header .inner-item {
     color: #FFFBEB;
     font-weight: 400;
-    font-size: 14;
+    font-size: 14px;
     display: flex;
     align-items: center;
 }
@@ -255,7 +255,7 @@ input, textarea, select, button {
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 16;
+    font-size: 16px;
     color: #25282B;
 }
 
@@ -378,7 +378,7 @@ input, textarea, select, button {
 
 .section-2 .inner-info .inner-text-1 {
     margin-top: 24px;
-    margin-bottom: 10;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 28px;
     color: white;
@@ -529,7 +529,7 @@ input, textarea, select, button {
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: 700;
-    font-size: 14;
+    font-size: 14px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -619,7 +619,7 @@ input, textarea, select, button {
     background-color: #DA0808;
     border-radius: 6px;
     padding: 7px;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 14px;
     color: white;
 }
@@ -859,7 +859,7 @@ input, textarea, select, button {
 }
 
 .section-8 .inner-item-2 .inner-date {
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 14px;
     color: black;
 }
@@ -1050,7 +1050,7 @@ input, textarea, select, button {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    gap: 30px;k
+    gap: 30px;
 }
 
 .footer .inner-wrap-3 .inner-links a {
@@ -1250,7 +1250,7 @@ input, textarea, select, button {
 
 /* Section 9 */
 .section-9 {
-    padding-bottom: 60px 0;
+    padding: 60px 0;
 
 }
 
@@ -1259,6 +1259,15 @@ input, textarea, select, button {
     grid-template-columns: 279fr 882fr;
     gap: 23px;
 }
-
-
 /* End Section 9 */
+
+/* Box Filter */
+.box-filter {
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+}
+/* End Box Filter */
