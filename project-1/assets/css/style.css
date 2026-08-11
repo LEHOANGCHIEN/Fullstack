@@ -146,6 +146,7 @@ input, textarea, select, button {
     padding: 8px 0;
     border-radius: 0 0 10px 10px;
     display: none;
+    z-index: 99;
 }
 
 .header .inner-menu > ul > li:hover > ul {
@@ -1259,6 +1260,137 @@ input, textarea, select, button {
     grid-template-columns: 279fr 882fr;
     gap: 23px;
 }
+
+.section-9 .inner-wrap-1 .inner-title-main {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--color-main);
+}
+
+.section-9 .inner-wrap-1 .inner-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #747578;
+    margin-bottom: 10px;
+}
+
+.section-9 .inner-wrap-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-9 .inner-wrap-2 .inner-sort {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.section-9 .inner-wrap-2 .inner-sort .inner-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #747578;
+}
+
+.section-9 .inner-wrap-2 .inner-sort .inner-button {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #747578;
+    gap: 5px;
+}
+
+.section-9 .inner-wrap-2 .inner-sort .inner-button.active,
+.section-9 .inner-wrap-2 .inner-sort .inner-button:hover {
+    color: #F9313D;
+}
+
+.section-9 .inner-wrap-2 .inner-sort .inner-button i {
+    font-size: 16px;
+}
+
+.section-9 .inner-wrap-2 .inner-sort .inner-button i.inner-rotate-90 {
+    transform: rotate(90deg);
+}
+
+.section-9 .inner-wrap-2 .inner-total {
+    font-weight: 400;
+    font-size: 18px;
+    color: #747578;
+}
+
+.section-9 .inner-wrap-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.section-9 .inner-button-filter {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .section-9 .inner-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .section-9 .inner-left {
+        display: none;
+    }
+
+    .section-9 .inner-wrap-2 {
+        flex-wrap: wrap;     
+        gap: 10px;
+    }
+
+    .section-9 .inner-wrap-2 .inner-sort {
+        width: 100%;
+    }
+
+    .section-9 .inner-button-filter {
+        display: inline-flex;
+        gap: 6px;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--color-main);
+        cursor: pointer;
+    }
+
+    .section-9 .inner-button-filter img {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-9 .inner-wrap-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .section-9 {
+        padding: 45px 0;
+    }
+
+    .section-9 .inner-wrap-1 .inner-title-main {
+        font-size: 24px;
+    }
+
+    .section-9 .inner-wrap-2 .inner-sort {
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .section-9 .inner-wrap-3 {
+        gap: 10px;
+    }
+}
 /* End Section 9 */
 
 /* Box Filter */
@@ -1348,3 +1480,105 @@ input, textarea, select, button {
     cursor: pointer;
 }
 /* End Box Filter */
+
+/* Box Pagination */
+.box-pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-pagination button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-main);
+    border-right-width: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-main);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+.box-pagination button:first-child {
+    /* border-radius: 5px 0 0 5px */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.box-pagination button:last-child {
+    /* border-radius: 0 5px 5px 0 */
+    border-right-width: 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.box-pagination button.active,
+.box-pagination button:hover {
+    background-color: var(--color-main);
+    color: #F8F6EB;
+}
+
+.box-pagination button i {
+    font-size: 9px;
+}
+/* End Box Pagination */
+
+/* Section 10 */
+.section-10 {
+    padding: 60px 0;
+}
+
+.section-10 .inner-wrap {
+    display: grid;
+    grid-template-columns: 695fr 469fr;
+    gap: 20px;
+}
+
+.section-10 .inner-wrap .inner-left {
+    background-color: yellow;
+}
+
+.section-10 .inner-wrap .inner-right {
+    background-color: green;
+}
+/* End Section 10 */
+
+/* Box Images */
+.box-images {
+    margin-bottom: 30px;
+}
+
+.box-images .inner-image-main {
+    margin-bottom: 30px;
+}
+
+.box-images .inner-image-main img {
+    width: 100%;
+    aspect-ratio: 695/480;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box-images .inner-image-thumb {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.box-images .inner-image-thumb img {
+    width: 100%;
+    aspect-ratio: 166/129;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box-images img {
+    width: 100px;
+}
+
+
+/* End Box Images */
