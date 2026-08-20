@@ -758,6 +758,13 @@ input, textarea, select, button {
     font-weight: 500;
     font-size: 16px;
     color: var(--color-main);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button-outline:hover {
+    background-color: var(--color-main);
+    color: white;
 }
 
 @media (max-width: 576px) {
@@ -1538,11 +1545,22 @@ input, textarea, select, button {
     gap: 20px;
 }
 
-.section-10 .inner-wrap .inner-left {
-    background-color: yellow;
+@media (max-width: 992px) {
+    .section-10 .inner-wrap {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-10 .inner-left {
+        order: 1;
+    }
 }
 
-.section-10 .inner-wrap .inner-right {
+@media (max-width: 576px) {
+    .section-10 {
+        padding: 45px 0;
+    }
+
     
 }
 /* End Section 10 */
@@ -1587,6 +1605,9 @@ input, textarea, select, button {
     background-color: white;
     box-shadow: 0px 1.75px 3.51px 0px #0000001F;
     padding: 24px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .box-tour-detail .inner-title-main {
@@ -1620,12 +1641,18 @@ input, textarea, select, button {
     font-size: 16px;
     color: var(--color-main);
     margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .box-tour-detail .inner-product .inner-rating {
     display: flex;
     align-items: center;
     justify-content: space-between;   
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .box-tour-detail .inner-product .inner-stars {
@@ -1695,6 +1722,62 @@ input, textarea, select, button {
 
 .box-tour-detail .inner-group .inner-item {
     display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.box-tour-detail .inner-group .inner-item label {
+    width: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5D5E60;
+}
+
+.box-tour-detail .inner-group .inner-item input {
+    width: 45px;
+    border: 0;
+    border-bottom: 2px dotted #9EA0A3;
+    font-weight: 500;
+    font-size: 14px;
+    color: #898B8D;
+}
+
+.box-tour-detail .inner-group .inner-item .inner-price {
+    flex: 1;
+    font-weight: 400;
+    font-size: 16px;
+    color: #898B8D;
+    text-align: right;
+}
+
+.box-tour-detail .inner-total {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-tour-detail .inner-total .inner-label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #5D5E60;
+}
+
+.box-tour-detail .inner-total .inner-price {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box-tour-detail .inner-button {
+    width: 100%;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--color-main);
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 /* End Box Tour Detail */
 
@@ -1703,3 +1786,111 @@ input, textarea, select, button {
     color: var(--color-main) !important;
 }
 /* End Text Main */
+
+/* Box Tour Info */
+.box-tour-info {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1.75px 3.51px 0px #0000001F;
+}
+
+.box-tour-info .inner-title-main {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-main);
+    margin-bottom: 15px;
+}
+
+.box-tour-info .inner-content {
+    margin-bottom: 20px;
+}
+
+.box-tour-info .inner-content p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #080A12;
+    margin-top: 0;
+}
+
+.box-tour-info .inner-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box-tour-info .inner-button {
+    text-align: center;
+}
+/* End Box Tour Info */
+
+/* Box Tour Schedule */
+.box-tour-schedule .inner-title-main {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-main);
+    margin-bottom: 15px;
+}
+
+.box-tour-schedule .inner-list {
+    display: grid;
+    gap: 15px;
+    padding-left: 11px;
+    position: relative;
+}
+
+.box-tour-schedule .inner-line {
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-main);
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.box-tour-schedule .inner-item {
+    position: relative;
+}
+
+.box-tour-schedule .inner-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-main);
+    position: absolute;
+    top: 12px;
+    left: -15px;
+}
+
+.box-tour-schedule .inner-item .inner-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--color-main);
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 8px;
+    display: inline-block;
+}
+
+.box-tour-schedule .inner-item .inner-content {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 1.75px 3.51px 0px #0000001F;
+    padding: 20px;
+}
+
+.box-tour-schedule .inner-item .inner-content p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #080A12;
+}
+
+.box-tour-schedule .inner-item .inner-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* End Box Tour Schedule */
