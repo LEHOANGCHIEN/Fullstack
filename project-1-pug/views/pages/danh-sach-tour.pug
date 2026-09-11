@@ -1,0 +1,192 @@
+extends ../layouts/default.pug
+
+block title
+    title Trang chủ
+
+block main
+  // Box Breadcrumb
+  .box-breadcrumb
+    img.inner-image(
+      alt="" 
+      src="assets/images/demo/banner-6.jpg"
+      )
+    .inner-content
+      .container
+        h1.inner-title Tour Nước Ngoài
+        .inner-list
+          a(href="#") Trang Chủ
+          i.fa-solid.fa-angles-right
+          a(href="#") Tour Nước Ngoài
+  // End Box Breadcrumb
+  // Section 9
+  .section-9
+    .container
+      .inner-wrap
+        .inner-left
+          // Box Filter
+          .box-filter
+            .inner-head
+              .inner-title Bộ lọc
+              img.inner-icon(
+                alt="Filter" 
+                src="assets/images/icon-filter.svg"
+                )
+            .inner-group
+              label.inner-label(for="") Điểm đi
+              select(name="")
+                option(value="") -- Chọn điểm đi --
+                option(value="") Hà Nội
+                option(value="") Hồ Chí Minh
+                option(value="") Đà Nẵng
+                option(value="") Nha Trang
+            .inner-group
+              label.inner-label(for="") Điểm đến
+              select(name="")
+                option(value="") -- Chọn điểm đến --
+                option(value="") Hà Nội
+                option(value="") Hồ Chí Minh
+                option(value="") Đà Nẵng
+                option(value="") Nha Trang
+            .inner-group
+              label.inner-label(for="") Ngày khởi hành
+              input(
+                name="" 
+                type="date"
+                )
+            .inner-group
+              label.inner-label Số lượng hành khách
+              .inner-list
+                .inner-item
+                  label(for="") Người lớn
+                  input(
+                    value="0" 
+                    name="" 
+                    type="number"
+                    )
+                .inner-item
+                  label(for="") Trẻ em
+                  input(
+                    value="0" 
+                    name="" 
+                    type="number"
+                    )
+                .inner-item
+                  label(for="") Em bé
+                  input(
+                    value="0" 
+                    name="" 
+                    type="number"
+                    )
+            .inner-group
+              label.inner-label(for="") -- Chọn khoảng giá --
+              select(name="")
+                option(value="") -- Chọn khoảng giá --
+                option(value="") Dưới 1 triệu
+                option(value="") 1 - 3 triệu
+                option(value="") 3 - 6 triệu
+                option(value="") 6 - 10 triệu
+                option(value="") Trên 10 triệu
+            button.inner-button Áp dụng
+          // End Box Filter
+        .inner-right
+          .inner-wrap-1
+            h2.inner-title-main Tour Nước Ngoài
+            .inner-desc
+              p
+                | Du lịch Châu Á: là châu lục lớn và đông dân nhất thế giới. Châu Á cũng có nhiều danh lam
+                |   thắng cảnh đẹp tại một số quốc gia như Hàn Quốc, Nhật Bản, Trung Quốc, Việt Nam,... và
+                |   VK Travel là nhà tổ chức du lịch chuyên nghiệp hàng đầu Châu Á, đã 5 lần liên tiếp nhận
+                |   giải TTG Travel Awards. Hãy cùng 28.Travel du lịch Châu Á để tận hưởng những dịch vụ tốt
+                |   nhất.
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam
+                |   lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut
+                |   aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
+          .inner-wrap-2
+            .inner-sort
+              .inner-label Sắp xếp:
+              a.inner-button(href="#")
+                | Giá tăng dần
+                i.fa-solid.fa-square-arrow-up-right
+              a.inner-button(href="#")
+                | Giá giảm dần
+                i.fa-solid.fa-square-arrow-up-right.inner-rotate-90
+              a.inner-button.active(href="#")
+                | Khuyến Mại Hot
+                i.fa-solid.fa-tag
+              a.inner-button(href="#")
+                | Xem Nhiều
+                i.fa-solid.fa-eye
+            .inner-total
+              | Tất cả:
+              b 101 Tour
+            button.inner-button-filter
+              | Bộ lọc
+              img.inner-icon(
+                alt="Filter" 
+                src="assets/images/icon-filter.svg"
+                )
+          .inner-wrap-3
+            .product-item
+              a.inner-image(href="#")
+                img(
+                  alt="Product 1" 
+                  src="assets/images/demo/product-1.jpg"
+                  )
+              .inner-content
+                .inner-discount
+                  i.fa-solid.fa-bolt
+                  | Giảm -30%
+                h3.inner-title
+                  a(href="#") Hà Nội – Lào Cai – SaPa 4N3Đ
+                .inner-prices
+                  .inner-price-old
+                    del 13.650.000
+                    span đ
+                  .inner-price-new
+                    | 10.650.000
+                    span đ
+                .inner-desc
+                  div
+                    | Mã Tour:
+                    b 123456789
+                  div
+                    | Ngày Khởi Hành:
+                    b 22/07/2024
+                  div
+                    | Thời Gian:
+                    b 10 Ngày 9 Đêm
+                .inner-footer
+                  .inner-rating
+                    .inner-stars
+                      i.fa-solid.fa-star
+                      i.fa-solid.fa-star
+                      i.fa-solid.fa-star
+                      i.fa-solid.fa-star
+                      i.fa-regular.fa-star
+                    .inner-numbers (5)
+                  .inner-stock
+                    .inner-label Số chỗ còn
+                    .inner-number 10
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+            .product-item Item
+          .box-pagination
+            button
+              i.fa-solid.fa-angles-left
+            button.active 1
+            button 2
+            button 3
+            button 4
+            button 5
+            button
+              i.fa-solid.fa-angles-right
+  // End Section 9

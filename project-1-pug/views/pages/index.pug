@@ -1,0 +1,334 @@
+extends ../layouts/default.pug
+
+block title
+    title Trang chủ
+
+block main
+    // Section 1
+    .section-1
+        .container
+            .inner-wrap
+                h1.inner-title
+                    | Du lịch Châu Á - Khám phá Mỹ, Úc, Âu
+                    br
+                    | Đi nơi đâu bạn muốn
+                p.inner-desc
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    |   et dolore magna aliqua
+                form.inner-form(action="")
+                    .inner-box.inner-location
+                        .inner-input-group
+                            img.inner-icon(alt="" src="assets/images/icon-location.svg")
+                            input.inner-input(placeholder="Bạn muốn đi đâu?" type="text")
+                            img.inner-down(alt="" src="assets/images/icon-down.svg")
+                    .inner-box
+                        .inner-input-group
+                            img.inner-icon(alt="" src="assets/images/icon-user.svg")
+                            input.inner-input(placeholder="Số lượng" type="text")
+                            img.inner-down(alt="" src="assets/images/icon-down.svg")
+                    .inner-box
+                        .inner-input-group
+                            img.inner-icon(alt="" src="assets/images/icon-calendar.svg")
+                            input.inner-input(placeholder="Lịch khởi hành" type="text")
+                            img.inner-down(alt="" src="assets/images/icon-down.svg")
+                    button.inner-button
+                        img(alt="" src="assets/images/icon-search-white.svg")
+                        | Tìm kiếm
+    // End Section 1
+
+    // Section 2
+    .section-2
+        .container
+            .inner-wrap
+                .inner-info
+                    h2.inner-text-1
+                        | ƯU ĐÃI 2024
+                        br
+                        | TOUR GIỜ CHÓT
+                    .inner-text-2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    .inner-text-3 Kết thúc sau
+                    .inner-clock
+                        .inner-clock-item 12
+                        .inner-clock-item 20
+                        .inner-clock-item 30
+                    .inner-text-4 GIẢM ĐẾN
+                    .inner-text-5
+                        | 990.000
+                        span đ
+                .inner-list
+                    .product-item
+                        a.inner-image(href="#")
+                            img(alt="Product 1" src="assets/images/demo/product-1.jpg")
+                        .inner-content
+                            .inner-discount
+                                i.fa-solid.fa-bolt
+                                | Giảm -30%
+                            h3.inner-title
+                                a(href="#") Hà Nội – Lào Cai – SaPa 4N3Đ
+                            .inner-prices
+                                .inner-price-old
+                                    del 13.650.000
+                                    span đ
+                                .inner-price-new
+                                    | 10.650.000
+                                    span đ
+                            .inner-desc
+                                div
+                                    | Mã Tour:
+                                    b 123456789
+                                div
+                                    | Ngày Khởi Hành:
+                                    b 22/07/2024
+                                div
+                                    | Thời Gian:
+                                    b 10 Ngày 9 Đêm
+                            .inner-footer
+                                .inner-rating
+                                    .inner-stars
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-regular.fa-star
+                                    .inner-numbers (5)
+                                .inner-stock
+                                    .inner-label Số chỗ còn
+                                    .inner-number 10
+                    .product-item
+                        a.inner-image(href="#")
+                            img(alt="Product 1" src="assets/images/demo/product-2.jpg")
+                        .inner-content
+                            .inner-discount
+                                i.fa-solid.fa-bolt
+                                | Giảm -30%
+                            h3.inner-title
+                                a(href="#")
+                                    | Tour 2026 Phú Quốc - Thiên Đường Đảo Ngọc (3N2D) Lorem ipsum dolor sit amet,
+                                    |   consectetur adipiscing elit, sed do eiusmod tempor
+                            .inner-prices
+                                .inner-price-old
+                                    del 13.650.000
+                                    span đ
+                                .inner-price-new
+                                    | 10.650.000
+                                    span đ
+                            .inner-desc
+                                div
+                                    | Mã Tour:
+                                    b 123456789
+                                div
+                                    | Ngày Khởi Hành:
+                                    b 22/07/2024
+                                div
+                                    | Thời Gian:
+                                    b 10 Ngày 9 Đêm
+                            .inner-footer
+                                .inner-rating
+                                    .inner-stars
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-regular.fa-star
+                                    .inner-numbers (5)
+                                .inner-stock
+                                    .inner-label Số chỗ còn
+                                    .inner-number 10
+                    .product-item
+                        a.inner-image(href="#")
+                            img(alt="Product 1" src="assets/images/demo/product-3.jpg")
+                        .inner-content
+                            .inner-discount
+                                i.fa-solid.fa-bolt
+                                | Giảm -30%
+                            h3.inner-title
+                                a(href="#") Combo Đà Nẵng 2024: ĐÀ NẴNG – HỘI AN – BÀ NÀ HILL
+                            .inner-prices
+                                .inner-price-old
+                                    del 13.650.000
+                                    span đ
+                                .inner-price-new
+                                    | 10.650.000
+                                    span đ
+                            .inner-desc
+                                div
+                                    | Mã Tour:
+                                    b 123456789
+                                div
+                                    | Ngày Khởi Hành:
+                                    b 22/07/2024
+                                div
+                                    | Thời Gian:
+                                    b 10 Ngày 9 Đêm
+                            .inner-footer
+                                .inner-rating
+                                    .inner-stars
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-solid.fa-star
+                                        i.fa-regular.fa-star
+                                    .inner-numbers (5)
+                                .inner-stock
+                                    .inner-label Số chỗ còn
+                                    .inner-number 10
+    // End Section 2
+
+    // Section 3
+    .section-3
+        .container
+            h2.box-title Khuyến Mại Bùng Nổ - Đánh Tan Nóng Bức
+            .inner-wrap
+                a.inner-item(href="#")
+                    img(alt="" src="assets/images/demo/banner-1.jpg")
+                a.inner-item(href="#")
+                    img(alt="" src="assets/images/demo/banner-2.jpg")
+                a.inner-item(href="#")
+                    img(alt="" src="assets/images/demo/banner-3.png")
+    // End Section 3
+
+    // Section 4
+    .section-4
+        .container
+            h2.box-title Tour Trong Nước
+            .inner-wrap
+                .product-item
+                    a.inner-image(href="#")
+                        img(alt="Product 1" src="assets/images/demo/product-1.jpg")
+                    .inner-content
+                        .inner-discount
+                            i.fa-solid.fa-bolt
+                            | Giảm -30%
+                        h3.inner-title
+                            a(href="#") Hà Nội – Lào Cai – SaPa 4N3Đ
+                        .inner-prices
+                            .inner-price-old
+                                del 13.650.000
+                                span đ
+                            .inner-price-new
+                                | 10.650.000
+                                span đ
+                        .inner-desc
+                            div
+                                | Mã Tour:
+                                b 123456789
+                            div
+                                | Ngày Khởi Hành:
+                                b 22/07/2024
+                            div
+                                | Thời Gian:
+                                b 10 Ngày 9 Đêm
+                        .inner-footer
+                            .inner-rating
+                                .inner-stars
+                                    i.fa-solid.fa-star
+                                    i.fa-solid.fa-star
+                                    i.fa-solid.fa-star
+                                    i.fa-solid.fa-star
+                                    i.fa-regular.fa-star
+                                .inner-numbers (5)
+                            .inner-stock
+                                .inner-label Số chỗ còn
+                                .inner-number 10
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+            .inner-button
+                a.button-outline(href="#") Xem tất cả
+    // End Section 4
+
+    // Section 5
+    .section-5
+        .container
+            a.inner-image(href="#")
+                img(alt="" src="assets/images/demo/banner-4.jpg")
+    // End Section 5
+
+    // Section 6
+    .section-4
+        .container
+            h2.box-title Tour Nước Ngoài
+            .inner-wrap
+                .product-item
+                    a.inner-image(href="#")
+                        img(alt="Product 1" src="assets/images/demo/product-1.jpg")
+                    .inner-content
+                        .inner-discount
+                            i.fa-solid.fa-bolt
+                            | Giảm -30%
+                        h3.inner-title
+                            a(href="#") Hà Nội – Lào Cai – SaPa 4N3Đ
+                        .inner-prices
+                            .inner-price-old
+                                del 13.650.000
+                                span đ
+                            .inner-price-new
+                                | 10.650.000
+                                span đ
+                        .inner-desc
+                            div
+                                | Mã Tour:
+                                b 123456789
+                            div
+                                | Ngày Khởi Hành:
+                                b 22/07/2024
+                            div
+                                | Thời Gian:
+                                b 10 Ngày 9 Đêm
+                        .inner-footer
+                            .inner-rating
+                                .inner-stars
+                                    i.fa-solid.fa-star
+                                    i.fa-solid.fa-star
+                                    i.fa-solid.fa-star
+                                    i.fa-solid.fa-star
+                                    i.fa-regular.fa-star
+                                .inner-numbers (5)
+                            .inner-stock
+                                .inner-label Số chỗ còn
+                                .inner-number 10
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+                .product-item Item
+            .inner-button
+                a.button-outline(href="#") Xem tất cả
+    // End Section 6
+
+    // Section 7
+    .section-5
+        .container
+            a.inner-image(href="#")
+                img(alt="" src="assets/images/demo/banner-5.jpg")
+    // End Section 7
+
+    // Section 8
+    .section-8
+        .container
+            h2.box-title Tin Tức Mới
+            .inner-wrap
+                .inner-item-1
+                    a(href="#")
+                        img(alt="" src="assets/images/demo/blog-1.jpg")
+                        .inner-content
+                            .inner-date 23/05/2024
+                            h3.inner-title Homestay "cổ tích" giữa Đà Lạt mộng mơ
+                .inner-item-2
+                    a(href="#")
+                        img(alt="" src="assets/images/demo/blog-2.jpg")
+                        .inner-content
+                            .inner-date 23/05/2024
+                            h3.inner-title Top 5 điểm check in độc đáo tại Singapore
+                            .inner-desc
+                                | Nếu bạn nghĩ du lịch Singapore rất nhàm chán vì chỉ mãi quanh quẩn trong những khối bê tông vô cảm thì bạn "chắc chưa?". Tuy đảo quốc Sư Tử không phải là một quốc gia rộng lớn nhưng các địa điểm du lịch tại Singapore chưa từng đánh mất sức hút đối với cộng đồng xê dịch quốc tế.
+                .inner-item-1 Item 3
+                .inner-item-1 Item 4
+                .inner-item-1 Item 5
+    // End Section 8
